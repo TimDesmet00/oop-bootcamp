@@ -1,6 +1,6 @@
 <?php
 
-class Panier {
+class Basket {
 
     public ?string $name;
     public float$price ;
@@ -27,9 +27,9 @@ class Panier {
     }
 }
 
-$banana = new Panier("banana", 1, 6, 0.06);
-$pommes = new Panier("pommes", 1.5, 3, 0.06);
-$vin = new Panier("vin", 10, 2, 0.21);
+$banana = new Basket("banana", 1, 6, 0.06);
+$pommes = new Basket("pommes", 1.5, 3, 0.06);
+$vin = new Basket("vin", 10, 2, 0.21);
 
 $total = $banana->getTotal() + $pommes->getTotal() + $vin->getTotal();
 $totalTax = $banana->getTaxe() + $pommes->getTaxe() + $vin->getTaxe();
